@@ -1,0 +1,16 @@
+C:\Android\Projects-nonAndroid\windows-forms-project-assignment\windows-forms-project-assignment\bin\Debug\net5.0\windows-forms-project-assignment.exe
+C:\Android\Projects-nonAndroid\windows-forms-project-assignment\windows-forms-project-assignment\bin\Debug\net5.0\windows-forms-project-assignment.deps.json
+C:\Android\Projects-nonAndroid\windows-forms-project-assignment\windows-forms-project-assignment\bin\Debug\net5.0\windows-forms-project-assignment.runtimeconfig.json
+C:\Android\Projects-nonAndroid\windows-forms-project-assignment\windows-forms-project-assignment\bin\Debug\net5.0\windows-forms-project-assignment.runtimeconfig.dev.json
+C:\Android\Projects-nonAndroid\windows-forms-project-assignment\windows-forms-project-assignment\bin\Debug\net5.0\windows-forms-project-assignment.dll
+C:\Android\Projects-nonAndroid\windows-forms-project-assignment\windows-forms-project-assignment\bin\Debug\net5.0\windows-forms-project-assignment.pdb
+C:\Android\Projects-nonAndroid\windows-forms-project-assignment\windows-forms-project-assignment\obj\Debug\net5.0\windows-forms-project-assignment.csproj.AssemblyReference.cache
+C:\Android\Projects-nonAndroid\windows-forms-project-assignment\windows-forms-project-assignment\obj\Debug\net5.0\windows-forms-project-assignment.GeneratedMSBuildEditorConfig.editorconfig
+C:\Android\Projects-nonAndroid\windows-forms-project-assignment\windows-forms-project-assignment\obj\Debug\net5.0\windows-forms-project-assignment.AssemblyInfoInputs.cache
+C:\Android\Projects-nonAndroid\windows-forms-project-assignment\windows-forms-project-assignment\obj\Debug\net5.0\windows-forms-project-assignment.AssemblyInfo.cs
+C:\Android\Projects-nonAndroid\windows-forms-project-assignment\windows-forms-project-assignment\obj\Debug\net5.0\windows-forms-project-assignment.csproj.CoreCompileInputs.cache
+C:\Android\Projects-nonAndroid\windows-forms-project-assignment\windows-forms-project-assignment\obj\Debug\net5.0\windows-forms-project-assignment.dll
+C:\Android\Projects-nonAndroid\windows-forms-project-assignment\windows-forms-project-assignment\obj\Debug\net5.0\refint\windows-forms-project-assignment.dll
+C:\Android\Projects-nonAndroid\windows-forms-project-assignment\windows-forms-project-assignment\obj\Debug\net5.0\windows-forms-project-assignment.pdb
+C:\Android\Projects-nonAndroid\windows-forms-project-assignment\windows-forms-project-assignment\obj\Debug\net5.0\windows-forms-project-assignment.genruntimeconfig.cache
+C:\Android\Projects-nonAndroid\windows-forms-project-assignment\windows-forms-project-assignment\obj\Debug\net5.0\ref\windows-forms-project-assignment.dll
