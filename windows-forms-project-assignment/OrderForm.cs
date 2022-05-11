@@ -8,7 +8,7 @@ namespace windows_forms_project_assignment
         /** define constants */
         const string STRING_FORM_TITLE = "Self Ordering System - Order Screen";
 
-        /** AdminForm class constructor */
+        /** AdminForm class constructor (initialize) */
         public OrderForm()
         {
             /** set the title of the Form */

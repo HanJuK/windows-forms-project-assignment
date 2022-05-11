@@ -16,3 +16,6 @@ C:\Android\Projects-nonAndroid\windows-forms-project-assignment\windows-forms-pr
 C:\Android\Projects-nonAndroid\windows-forms-project-assignment\windows-forms-project-assignment\obj\Debug\net5.0-windows\ref\windows-forms-project-assignment.dll
 C:\Android\Projects-nonAndroid\windows-forms-project-assignment\windows-forms-project-assignment\obj\Debug\net5.0-windows\windows_forms_project_assignment.AdminForm.resources
 C:\Android\Projects-nonAndroid\windows-forms-project-assignment\windows-forms-project-assignment\obj\Debug\net5.0-windows\windows-forms-project-assignment.csproj.GenerateResource.cache
+C:\Android\Projects-nonAndroid\windows-forms-project-assignment\windows-forms-project-assignment\obj\Debug\net5.0-windows\windows_forms_project_assignment.CreateUpdateProductForm.resources
+C:\Android\Projects-nonAndroid\windows-forms-project-assignment\windows-forms-project-assignment\obj\Debug\net5.0-windows\windows_forms_project_assignment.MainForm.resources
+C:\Android\Projects-nonAndroid\windows-forms-project-assignment\windows-forms-project-assignment\obj\Debug\net5.0-windows\windows_forms_project_assignment.OrderForm.resources
