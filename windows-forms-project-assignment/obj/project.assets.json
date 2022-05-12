@@ -8,8 +8,7 @@
     "net5.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\김한주\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\sec\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -17,14 +16,11 @@
       "projectUniqueName": "C:\\Android\\Projects-nonAndroid\\windows-forms-project-assignment\\windows-forms-project-assignment\\windows-forms-project-assignment.csproj",
       "projectName": "windows-forms-project-assignment",
       "projectPath": "C:\\Android\\Projects-nonAndroid\\windows-forms-project-assignment\\windows-forms-project-assignment\\windows-forms-project-assignment.csproj",
-      "packagesPath": "C:\\Users\\김한주\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\sec\\.nuget\\packages\\",
       "outputPath": "C:\\Android\\Projects-nonAndroid\\windows-forms-project-assignment\\windows-forms-project-assignment\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\김한주\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sec\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
