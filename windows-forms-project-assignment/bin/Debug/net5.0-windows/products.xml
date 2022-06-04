@@ -9,6 +9,24 @@
   <id>1</id>
   <name>test2</name>
   <price>1000</price>
+  <isDeleted>1</isDeleted>
+</product>
+<product>
+  <id>2</id>
+  <name>test3</name>
+  <price>200</price>
+  <isDeleted>0</isDeleted>
+</product>
+<product>
+  <id>3</id>
+  <name>tesdt4</name>
+  <price>200</price>
+  <isDeleted>0</isDeleted>
+</product>
+<product>
+  <id>4</id>
+  <name>test 100</name>
+  <price>400</price>
   <isDeleted>0</isDeleted>
 </product>
 </products>

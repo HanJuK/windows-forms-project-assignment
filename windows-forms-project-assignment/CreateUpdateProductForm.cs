@@ -114,7 +114,9 @@ namespace windows_forms_project_assignment
 
             DataManager.saveData();
 
-            // TODO: send data to parent (that a new item has been added)
+            this.Close();
+
+            return;
         }
     }
 }
