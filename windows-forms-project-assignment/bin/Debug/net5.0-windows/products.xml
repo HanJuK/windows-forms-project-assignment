@@ -1,0 +1,14 @@
+<products>
+<product>
+  <id>0</id>
+  <name>test1</name>
+  <price>500</price>
+  <isDeleted>0</isDeleted>
+</product>
+<product>
+  <id>1</id>
+  <name>test2</name>
+  <price>1000</price>
+  <isDeleted>0</isDeleted>
+</product>
+</products>

@@ -67,6 +67,7 @@ namespace windows_forms_project_assignment
             this.buttonCreateUpdateProduct.TabIndex = 4;
             this.buttonCreateUpdateProduct.Text = "Create/Update Product";
             this.buttonCreateUpdateProduct.UseVisualStyleBackColor = true;
+            this.buttonCreateUpdateProduct.Click += new System.EventHandler(this.buttonCreateUpdateProduct_Click);
             // 
             // numericUpDownProductPrice
             // 
@@ -98,6 +99,22 @@ namespace windows_forms_project_assignment
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        /** define EventHandlers */
+        private void buttonCreateUpdateProduct_Click(object sender, EventArgs e)
+        {
+            DataManager.products.Add(new Product()
+            {
+                id = DataManager.products.Count,
+                name = textBoxProductName.Text,
+                price = (int)numericUpDownProductPrice.Value,
+                isDeleted = false
+            });
+
+            DataManager.saveData();
+
+            // TODO: send data to parent (that a new item has been added)
         }
     }
 }
