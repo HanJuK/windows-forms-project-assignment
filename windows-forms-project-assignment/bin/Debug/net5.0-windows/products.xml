@@ -3,7 +3,7 @@
   <id>0</id>
   <name>test1</name>
   <price>500</price>
-  <isDeleted>0</isDeleted>
+  <isDeleted>1</isDeleted>
 </product>
 <product>
   <id>1</id>
@@ -13,20 +13,26 @@
 </product>
 <product>
   <id>2</id>
-  <name>test3</name>
+  <name>test311</name>
   <price>200</price>
   <isDeleted>0</isDeleted>
 </product>
 <product>
   <id>3</id>
-  <name>tesdt4</name>
-  <price>200</price>
+  <name>tesdt46</name>
+  <price>400</price>
   <isDeleted>0</isDeleted>
 </product>
 <product>
   <id>4</id>
-  <name>test 100</name>
+  <name>test 101</name>
   <price>400</price>
   <isDeleted>0</isDeleted>
+</product>
+<product>
+  <id>5</id>
+  <name>11</name>
+  <price>1111</price>
+  <isDeleted>1</isDeleted>
 </product>
 </products>

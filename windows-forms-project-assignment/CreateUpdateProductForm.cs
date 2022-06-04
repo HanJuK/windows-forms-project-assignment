@@ -8,11 +8,18 @@ namespace windows_forms_project_assignment
         /** define constants */
         const string STRING_FORM_TITLE = "Self Ordering System - Admin Screen - Create/Update Product";
 
+        /** member variables (used when updating) */
+        private bool isUpdateMode = false;
+        private int id;
+        private string name;
+        private int price;
+
         /** variables for child forms */
         private Label labelProductName;
         private TextBox textBoxProductName;
         private Label labelProductPrice;
         private NumericUpDown numericUpDownProductPrice;
+        private Button buttonDeleteProduct;
         private Button buttonCreateUpdateProduct;
 
         /** CreateUpdateProductForm class constructor (initialize) */
@@ -24,6 +31,24 @@ namespace windows_forms_project_assignment
             this.InitializeComponent();
         }
 
+        public CreateUpdateProductForm(int id)
+        {
+            /** set mode to update, set values of the product */
+            this.isUpdateMode = true;
+
+            /** set values of the product */
+            this.id = id;
+            this.name = DataManager.products[id].name;
+            this.price = DataManager.products[id].price;
+
+            this.InitializeComponent();
+
+            this.textBoxProductName.Text = name;
+            this.numericUpDownProductPrice.Value = price;
+
+            this.buttonDeleteProduct.Enabled = true;
+        }
+
         private void InitializeComponent()
         {
             this.labelProductName = new System.Windows.Forms.Label();
@@ -31,6 +56,7 @@ namespace windows_forms_project_assignment
             this.labelProductPrice = new System.Windows.Forms.Label();
             this.buttonCreateUpdateProduct = new System.Windows.Forms.Button();
             this.numericUpDownProductPrice = new System.Windows.Forms.NumericUpDown();
+            this.buttonDeleteProduct = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownProductPrice)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,9 +112,21 @@ namespace windows_forms_project_assignment
             this.numericUpDownProductPrice.Size = new System.Drawing.Size(150, 27);
             this.numericUpDownProductPrice.TabIndex = 5;
             // 
+            // buttonDeleteProduct
+            // 
+            this.buttonDeleteProduct.Enabled = false;
+            this.buttonDeleteProduct.Location = new System.Drawing.Point(94, 98);
+            this.buttonDeleteProduct.Name = "buttonDeleteProduct";
+            this.buttonDeleteProduct.Size = new System.Drawing.Size(94, 29);
+            this.buttonDeleteProduct.TabIndex = 6;
+            this.buttonDeleteProduct.Text = "Delete";
+            this.buttonDeleteProduct.UseVisualStyleBackColor = true;
+            this.buttonDeleteProduct.Click += new System.EventHandler(this.buttonDeleteProduct_Click);
+            // 
             // CreateUpdateProductForm
             // 
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.buttonDeleteProduct);
             this.Controls.Add(this.numericUpDownProductPrice);
             this.Controls.Add(this.buttonCreateUpdateProduct);
             this.Controls.Add(this.textBoxProductName);
@@ -104,13 +142,32 @@ namespace windows_forms_project_assignment
         /** define EventHandlers */
         private void buttonCreateUpdateProduct_Click(object sender, EventArgs e)
         {
-            DataManager.products.Add(new Product()
+            if (isUpdateMode)
             {
-                id = DataManager.products.Count,
-                name = textBoxProductName.Text,
-                price = (int)numericUpDownProductPrice.Value,
-                isDeleted = false
-            });
+                DataManager.products[id].name = textBoxProductName.Text;
+                DataManager.products[id].price = (int)numericUpDownProductPrice.Value;
+            }
+            else
+            {
+                DataManager.products.Add(new Product()
+                {
+                    id = DataManager.products.Count,
+                    name = textBoxProductName.Text,
+                    price = (int)numericUpDownProductPrice.Value,
+                    isDeleted = false
+                });
+            }
+
+            DataManager.saveData();
+
+            this.Close();
+
+            return;
+        }
+
+        private void buttonDeleteProduct_Click(object sender, EventArgs e)
+        {
+            DataManager.products[id].isDeleted = true;
 
             DataManager.saveData();
 

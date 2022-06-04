@@ -45,10 +45,12 @@ namespace windows_forms_project_assignment
             this.dataGridViewProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewProduct.Location = new System.Drawing.Point(12, 12);
             this.dataGridViewProduct.Name = "dataGridViewProduct";
+            this.dataGridViewProduct.ReadOnly = true;
             this.dataGridViewProduct.RowHeadersWidth = 51;
             this.dataGridViewProduct.RowTemplate.Height = 29;
             this.dataGridViewProduct.Size = new System.Drawing.Size(458, 400);
             this.dataGridViewProduct.TabIndex = 1;
+            this.dataGridViewProduct.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewProduct_CellDoubleClick);
             // 
             // AdminForm
             // 
@@ -86,6 +88,23 @@ namespace windows_forms_project_assignment
         {
             /** open create update product screen */
             Form createUpdateProductForm = new CreateUpdateProductForm();
+            createUpdateProductForm.FormClosed += new FormClosedEventHandler(createUpdateProductFormClosed);
+
+            void createUpdateProductFormClosed(object sender, FormClosedEventArgs e)
+            {
+                this.refreshProductList();
+            }
+
+            createUpdateProductForm.ShowDialog();
+
+            return;
+        }
+
+        private void dataGridViewProduct_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            /** open create update product screen in update mode */
+            Form createUpdateProductForm = new CreateUpdateProductForm(
+                (int)dataGridViewProduct.Rows[e.RowIndex].Cells[0].Value);
             createUpdateProductForm.FormClosed += new FormClosedEventHandler(createUpdateProductFormClosed);
 
             void createUpdateProductFormClosed(object sender, FormClosedEventArgs e)
