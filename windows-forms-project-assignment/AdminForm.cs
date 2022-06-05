@@ -102,6 +102,12 @@ namespace windows_forms_project_assignment
 
         private void dataGridViewProduct_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            /** handle exception for when clicked topmost row */
+            if (e.RowIndex == -1)
+            {
+                return;
+            }
+
             /** open create update product screen in update mode */
             Form createUpdateProductForm = new CreateUpdateProductForm(
                 (int)dataGridViewProduct.Rows[e.RowIndex].Cells[0].Value);

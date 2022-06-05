@@ -25,14 +25,26 @@
 </product>
 <product>
   <id>4</id>
-  <name>grgreaaa</name>
-  <price>51581</price>
+  <name>111</name>
+  <price>66</price>
   <isDeleted>0</isDeleted>
 </product>
 <product>
   <id>5</id>
-  <name>aaaaz</name>
+  <name>234</name>
   <price>22</price>
+  <isDeleted>0</isDeleted>
+</product>
+<product>
+  <id>6</id>
+  <name>awd</name>
+  <price>0</price>
+  <isDeleted>1</isDeleted>
+</product>
+<product>
+  <id>7</id>
+  <name>1111</name>
+  <price>500</price>
   <isDeleted>0</isDeleted>
 </product>
 </products>
