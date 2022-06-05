@@ -6,10 +6,17 @@ namespace windows_forms_project_assignment
     internal class CreateUpdateProductForm : Form
     {
         /** define constants */
-        const string STRING_FORM_TITLE = "Self Ordering System - Admin Screen - Create/Update Product";
+        const string STRING_FORM_TITLE_CREATE_MODE = "Self Ordering System - Admin Screen - Create Product";
+        const string STRING_FORM_TITLE_UPDATE_MODE = "Self Ordering System - Admin Screen - Update Product";
+        const string STRING_BUTTON_CREATE = "Create";
+        const string STRING_BUTTON_UPDATE = "Update";
+        const int INT_CREATE_MODE = 0;
+        const int INT_UPDATE_MODE = 1;
+
+        /** variable for setting the mode */
+        private int mode;
 
         /** member variables (used when updating) */
-        private bool isUpdateMode = false;
         private int id;
         private string name;
         private int price;
@@ -22,19 +29,30 @@ namespace windows_forms_project_assignment
         private Button buttonDeleteProduct;
         private Button buttonCreateUpdateProduct;
 
-        /** CreateUpdateProductForm class constructor (initialize) */
+        /** CreateUpdateProductForm class constructor (create mode) */
         public CreateUpdateProductForm()
         {
             /** set the title of the Form */
-            this.Text = STRING_FORM_TITLE;
+            this.Text = STRING_FORM_TITLE_CREATE_MODE;
+
+            /** set mode to create */
+            this.mode = INT_CREATE_MODE;
 
             this.InitializeComponent();
+
+            this.buttonCreateUpdateProduct.Text = STRING_BUTTON_CREATE;
+
+            this.buttonDeleteProduct.Visible = false;
         }
 
+        /** CreateUpdateProductForm class constructor (update mode) */
         public CreateUpdateProductForm(int id)
         {
-            /** set mode to update, set values of the product */
-            this.isUpdateMode = true;
+            /** set the title of the Form */
+            this.Text = STRING_FORM_TITLE_UPDATE_MODE;
+
+            /** set mode to update */
+            this.mode = INT_UPDATE_MODE;
 
             /** set values of the product */
             this.id = id;
@@ -46,7 +64,7 @@ namespace windows_forms_project_assignment
             this.textBoxProductName.Text = name;
             this.numericUpDownProductPrice.Value = price;
 
-            this.buttonDeleteProduct.Enabled = true;
+            this.buttonCreateUpdateProduct.Text = STRING_BUTTON_UPDATE;
         }
 
         private void InitializeComponent()
@@ -65,7 +83,7 @@ namespace windows_forms_project_assignment
             this.labelProductName.AutoSize = true;
             this.labelProductName.Location = new System.Drawing.Point(12, 9);
             this.labelProductName.Name = "labelProductName";
-            this.labelProductName.Size = new System.Drawing.Size(115, 20);
+            this.labelProductName.Size = new System.Drawing.Size(92, 15);
             this.labelProductName.TabIndex = 0;
             this.labelProductName.Text = "Product Name: ";
             // 
@@ -73,7 +91,7 @@ namespace windows_forms_project_assignment
             // 
             this.textBoxProductName.Location = new System.Drawing.Point(12, 27);
             this.textBoxProductName.Name = "textBoxProductName";
-            this.textBoxProductName.Size = new System.Drawing.Size(100, 27);
+            this.textBoxProductName.Size = new System.Drawing.Size(100, 23);
             this.textBoxProductName.TabIndex = 2;
             // 
             // labelProductPrice
@@ -81,7 +99,7 @@ namespace windows_forms_project_assignment
             this.labelProductPrice.AutoSize = true;
             this.labelProductPrice.Location = new System.Drawing.Point(233, 9);
             this.labelProductPrice.Name = "labelProductPrice";
-            this.labelProductPrice.Size = new System.Drawing.Size(108, 20);
+            this.labelProductPrice.Size = new System.Drawing.Size(86, 15);
             this.labelProductPrice.TabIndex = 1;
             this.labelProductPrice.Text = "Product Price: ";
             // 
@@ -109,12 +127,11 @@ namespace windows_forms_project_assignment
             0,
             0});
             this.numericUpDownProductPrice.Name = "numericUpDownProductPrice";
-            this.numericUpDownProductPrice.Size = new System.Drawing.Size(150, 27);
+            this.numericUpDownProductPrice.Size = new System.Drawing.Size(150, 23);
             this.numericUpDownProductPrice.TabIndex = 5;
             // 
             // buttonDeleteProduct
             // 
-            this.buttonDeleteProduct.Enabled = false;
             this.buttonDeleteProduct.Location = new System.Drawing.Point(94, 98);
             this.buttonDeleteProduct.Name = "buttonDeleteProduct";
             this.buttonDeleteProduct.Size = new System.Drawing.Size(94, 29);
@@ -142,12 +159,7 @@ namespace windows_forms_project_assignment
         /** define EventHandlers */
         private void buttonCreateUpdateProduct_Click(object sender, EventArgs e)
         {
-            if (isUpdateMode)
-            {
-                DataManager.products[id].name = textBoxProductName.Text;
-                DataManager.products[id].price = (int)numericUpDownProductPrice.Value;
-            }
-            else
+            if (this.mode == INT_CREATE_MODE)
             {
                 DataManager.products.Add(new Product()
                 {
@@ -156,6 +168,11 @@ namespace windows_forms_project_assignment
                     price = (int)numericUpDownProductPrice.Value,
                     isDeleted = false
                 });
+            }
+            else // this.mode == INT_UPDATE_MODE
+            {
+                DataManager.products[id].name = textBoxProductName.Text;
+                DataManager.products[id].price = (int)numericUpDownProductPrice.Value;
             }
 
             DataManager.saveData();

@@ -86,7 +86,7 @@ namespace windows_forms_project_assignment
         /** define EventHandlers */
         private void buttonCreateProduct_Click(object sender, EventArgs e)
         {
-            /** open create update product screen */
+            /** open create update product screen in create mode */
             Form createUpdateProductForm = new CreateUpdateProductForm();
             createUpdateProductForm.FormClosed += new FormClosedEventHandler(createUpdateProductFormClosed);
 

@@ -10,13 +10,13 @@ namespace windows_forms_project_assignment
     {
         public static List<Product> products = new List<Product>();
 
-        /** DataManager constructor. */
+        /** load data when the DataManager is constructed */
         static DataManager()
         {
             loadData();
         }
 
-        /** Function for loading database to memory. */
+        /** method for loading database to memory */
         public static void loadData()
         {
             try
@@ -34,12 +34,12 @@ namespace windows_forms_project_assignment
             }
             catch (Exception e) when (e is FileLoadException || e is FileNotFoundException)
             {
-                /** If no such file, create a new one. */
+                /** if no such file, create a new one */
                 saveData();
             }
         }
 
-        /** Function for saving database to disk. */
+        /** method for saving database to disk */
         public static void saveData()
         {
             string productsOutput = "";
