@@ -153,6 +153,7 @@ namespace windows_forms_project_assignment
             this.buttonPay.TabIndex = 8;
             this.buttonPay.Text = "Pay";
             this.buttonPay.UseVisualStyleBackColor = true;
+            this.buttonPay.Click += new System.EventHandler(this.buttonPay_Click);
             // 
             // OrderForm
             // 
@@ -341,6 +342,22 @@ namespace windows_forms_project_assignment
 
             this.refreshCartList();
             this.calculateAndUpdateGrandTotal();
+
+            return;
+        }
+
+        private void buttonPay_Click(object sender, System.EventArgs e)
+        {
+            /** open mileage form */
+            Form mileageForm = new MileageForm(this.cart, this.grandTotal);
+            mileageForm.FormClosed += new FormClosedEventHandler(mileageFormClosed);
+
+            void mileageFormClosed(object sender, FormClosedEventArgs e)
+            {
+                // TODO: close Form
+            }
+
+            mileageForm.ShowDialog();
 
             return;
         }

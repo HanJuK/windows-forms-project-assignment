@@ -9,6 +9,7 @@ namespace windows_forms_project_assignment
     internal class DataManager
     {
         public static List<Product> products = new List<Product>();
+        public static List<Order> orders = new List<Order>();
 
         /** load data when the DataManager is constructed */
         static DataManager()

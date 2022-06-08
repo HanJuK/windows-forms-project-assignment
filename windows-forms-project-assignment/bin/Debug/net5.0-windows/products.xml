@@ -1,8 +1,8 @@
 <products>
 <product>
   <id>0</id>
-  <name>a</name>
-  <price>100</price>
+  <name>ajnhvjh</name>
+  <price>1000</price>
   <isDeleted>0</isDeleted>
 </product>
 <product>
@@ -43,8 +43,14 @@
 </product>
 <product>
   <id>7</id>
-  <name>1111</name>
-  <price>500</price>
+  <name>ㅁㄴㅁㅁㅇㅈㅂㅁ</name>
+  <price>5000</price>
+  <isDeleted>0</isDeleted>
+</product>
+<product>
+  <id>8</id>
+  <name>빅맥</name>
+  <price>5000</price>
   <isDeleted>0</isDeleted>
 </product>
 </products>

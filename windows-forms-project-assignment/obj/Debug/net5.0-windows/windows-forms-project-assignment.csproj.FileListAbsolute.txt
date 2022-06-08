@@ -19,3 +19,4 @@ C:\Android\Projects-nonAndroid\windows-forms-project-assignment\windows-forms-pr
 C:\Android\Projects-nonAndroid\windows-forms-project-assignment\windows-forms-project-assignment\obj\Debug\net5.0-windows\windows_forms_project_assignment.CreateUpdateProductForm.resources
 C:\Android\Projects-nonAndroid\windows-forms-project-assignment\windows-forms-project-assignment\obj\Debug\net5.0-windows\windows_forms_project_assignment.MainForm.resources
 C:\Android\Projects-nonAndroid\windows-forms-project-assignment\windows-forms-project-assignment\obj\Debug\net5.0-windows\windows_forms_project_assignment.OrderForm.resources
+C:\Android\Projects-nonAndroid\windows-forms-project-assignment\windows-forms-project-assignment\obj\Debug\net5.0-windows\windows_forms_project_assignment.MileageForm.resources
