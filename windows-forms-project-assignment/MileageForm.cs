@@ -77,9 +77,6 @@ namespace windows_forms_project_assignment
         /** define EventHandlers */
         private void buttonEarnMileage_Click(object sender, System.EventArgs e)
         {
-            int mileageCount = 0;
-            bool isMileageFull = false;
-
             /** handle exception where phone value is invalid */
             try
             {
@@ -87,15 +84,21 @@ namespace windows_forms_project_assignment
                 {
                     // TODO: clean this
                     MessageBox.Show("invalid");
+
+                    return;
                 }
             }
             catch (Exception _)
             {
                 // TODO: clean this
                 MessageBox.Show("invalid");
+
+                return;
             }
 
-            /** check if mileage is full (it's the 10th purchase) */
+            int mileageCount = 0;
+
+            /** calculate mileage count */
             foreach (Order order in DataManager.orders)
             {
                 if (order.phone.Equals(this.textBoxPhone.Text))
@@ -107,17 +110,12 @@ namespace windows_forms_project_assignment
                         continue;
                     }
 
-                    if (++mileageCount == 9)
-                    {
-                        isMileageFull = true;
-
-                        break;
-                    }
+                    ++mileageCount;
                 }
             }
 
-            /** save phone value to Order (and if mileage is full -> apply a 10% discount) */
-            if (isMileageFull)
+            /** save phone value to Order (and if the new mileage is 10 -> apply a 10% discount) */
+            if (mileageCount + 1 == 10)
             {
                 DataManager.orders.Add(new Order()
                 {
@@ -127,6 +125,8 @@ namespace windows_forms_project_assignment
                     phone = this.textBoxPhone.Text,
                     isMileageUsed = true
                 });
+
+                DataManager.saveData();
 
                 // TODO: clean this
                 MessageBox.Show("10% dc applied");
@@ -141,6 +141,8 @@ namespace windows_forms_project_assignment
                     phone = this.textBoxPhone.Text,
                     isMileageUsed = false
                 });
+
+                DataManager.saveData();
 
                 // TODO: clean this
                 MessageBox.Show($"current mileage: {mileageCount + 1}");
@@ -159,6 +161,8 @@ namespace windows_forms_project_assignment
                 phone = "-1",
                 isMileageUsed = false
             });
+
+            DataManager.saveData();
 
             // TODO: clean this
             MessageBox.Show("purchase success");

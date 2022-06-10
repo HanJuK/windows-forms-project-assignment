@@ -354,6 +354,7 @@ namespace windows_forms_project_assignment
 
             void mileageFormClosed(object sender, FormClosedEventArgs e)
             {
+                DataManager.loadData(); // TODO: delete this
                 // TODO: close Form
             }
 

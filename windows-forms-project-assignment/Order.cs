@@ -5,6 +5,7 @@ namespace windows_forms_project_assignment
     internal class Order
     {
         public List<CartItem> cart { get; set; }
+        public string cartDataInString { get; set; }
         public int grandTotal { get; set; }
         public string datetime { get; set; }
         public string phone { get; set; }
