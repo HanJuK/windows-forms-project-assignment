@@ -42,6 +42,7 @@ namespace windows_forms_project_assignment
 
             this.hideShowProductDetailForms(true);
             this.hideShowCartDetailForms(true);
+            this.hideShowPayButton(true);
             this.calculateAndUpdateGrandTotal();
         }
 
@@ -306,6 +307,13 @@ namespace windows_forms_project_assignment
             return;
         }
 
+        void hideShowPayButton(bool isHide)
+        {
+            this.buttonPay.Visible = !isHide;
+
+            return;
+        }
+
         void calculateAndUpdateGrandTotal()
         {
             this.grandTotal = 0;
@@ -376,6 +384,7 @@ namespace windows_forms_project_assignment
 
             this.selectedProductId = null;
             this.hideShowProductDetailForms(true);
+            this.hideShowPayButton(false);
 
             this.refreshCartList();
             this.calculateAndUpdateGrandTotal();
@@ -409,6 +418,12 @@ namespace windows_forms_project_assignment
 
             this.refreshCartList();
             this.calculateAndUpdateGrandTotal();
+
+            /** if no item left -> hide pay buutton */
+            if (this.cart.Count == 0)
+            {
+                this.hideShowPayButton(true);
+            }
 
             return;
         }

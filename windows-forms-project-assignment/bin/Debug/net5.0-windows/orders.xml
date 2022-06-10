@@ -1,37 +1,30 @@
 <orders>
 <order>
-  <cartDataInString>8,빅맥,5000,4,20000,|</cartDataInString>
-  <grandTotal>20000</grandTotal>
-  <datetime>2022/06/10 금 오후 11:38:47</datetime>
-  <phone>01089446650</phone>
+  <cartDataInString>12,1231,0,1,0,|14,13515,0,1,0,|9,bnmbhm,25235,1,25235,|</cartDataInString>
+  <grandTotal>25235</grandTotal>
+  <datetime>2022/06/11 토 오전 2:26:55</datetime>
+  <phone>-1</phone>
   <isMileageUsed>0</isMileageUsed>
 </order>
 <order>
-  <cartDataInString>7,ㅁㄴㅁㅁㅇㅈㅂㅁ,5000,1,5000,|</cartDataInString>
-  <grandTotal>5000</grandTotal>
-  <datetime>2022/06/10 금 오후 11:45:33</datetime>
-  <phone>051</phone>
+  <cartDataInString>13,123123,234,1,234,|15,23523,0,1,0,|</cartDataInString>
+  <grandTotal>234</grandTotal>
+  <datetime>2022/06/11 토 오전 2:27:11</datetime>
+  <phone>25</phone>
   <isMileageUsed>0</isMileageUsed>
 </order>
 <order>
-  <cartDataInString>7,ㅁㄴㅁㅁㅇㅈㅂㅁ,5000,1,5000,|2,casdasdsadddddddddddddddddd,300,5,1500,|</cartDataInString>
-  <grandTotal>6500</grandTotal>
-  <datetime>2022/06/10 금 오후 11:59:04</datetime>
-  <phone>561651</phone>
+  <cartDataInString>9,bnmbhm,25235,1,25235,|15,23523,0,1,0,|13,123123,234,100,23400,|</cartDataInString>
+  <grandTotal>48635</grandTotal>
+  <datetime>2022/06/11 토 오전 2:36:23</datetime>
+  <phone>-1</phone>
   <isMileageUsed>0</isMileageUsed>
 </order>
 <order>
-  <cartDataInString>0,ajnhvjh,1000,1,1000,|5,234,100000,1,100000,|8,빅맥,5500,1,5500,|9,bnmbhm,25235,1,25235,|10,ehtreh,0,1,0,|12,1231,0,1,0,|13,123123,234,1,234,|14,13515,0,1,0,|15,23523,0,1,0,|16,235235,0,1,0,|17,69679,0,1,0,|18,7808087,0,1,0,|19,47457,0,1,0,|20,90768078,0,1,0,|21,365364,0,1,0,|22,7969769,0,1,0,|</cartDataInString>
-  <grandTotal>131969</grandTotal>
-  <datetime>2022/06/11 토 오전 1:39:18</datetime>
-  <phone>01089446650</phone>
-  <isMileageUsed>0</isMileageUsed>
-</order>
-<order>
-  <cartDataInString>8,빅맥,5500,55,302500,|</cartDataInString>
-  <grandTotal>302500</grandTotal>
-  <datetime>2022/06/11 토 오전 2:09:27</datetime>
-  <phone>05181</phone>
+  <cartDataInString>8,빅맥,5500,1,5500,|</cartDataInString>
+  <grandTotal>5500</grandTotal>
+  <datetime>2022/06/11 토 오전 2:37:15</datetime>
+  <phone>-1</phone>
   <isMileageUsed>0</isMileageUsed>
 </order>
 </orders>
