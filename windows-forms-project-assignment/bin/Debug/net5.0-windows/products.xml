@@ -53,4 +53,16 @@
   <price>5000</price>
   <isDeleted>0</isDeleted>
 </product>
+<product>
+  <id>9</id>
+  <name>bnmbhm</name>
+  <price>25235</price>
+  <isDeleted>0</isDeleted>
+</product>
+<product>
+  <id>10</id>
+  <name>ehtreh</name>
+  <price>0</price>
+  <isDeleted>0</isDeleted>
+</product>
 </products>
