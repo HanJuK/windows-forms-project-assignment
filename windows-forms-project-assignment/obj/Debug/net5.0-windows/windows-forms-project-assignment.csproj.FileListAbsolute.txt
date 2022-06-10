@@ -20,5 +20,5 @@ C:\Android\Projects-nonAndroid\windows-forms-project-assignment\windows-forms-pr
 C:\Android\Projects-nonAndroid\windows-forms-project-assignment\windows-forms-project-assignment\obj\Debug\net5.0-windows\windows_forms_project_assignment.MainForm.resources
 C:\Android\Projects-nonAndroid\windows-forms-project-assignment\windows-forms-project-assignment\obj\Debug\net5.0-windows\windows_forms_project_assignment.OrderForm.resources
 C:\Android\Projects-nonAndroid\windows-forms-project-assignment\windows-forms-project-assignment\obj\Debug\net5.0-windows\windows_forms_project_assignment.MileageForm.resources
-C:\Android\Projects-nonAndroid\windows-forms-project-assignment\windows-forms-project-assignment\obj\Debug\net5.0-windows\windows_forms_project_assignment.OrderHistoryForm.resources
 C:\Android\Projects-nonAndroid\windows-forms-project-assignment\windows-forms-project-assignment\obj\Debug\net5.0-windows\windows_forms_project_assignment.OrderHistoryCart.resources
+C:\Android\Projects-nonAndroid\windows-forms-project-assignment\windows-forms-project-assignment\obj\Debug\net5.0-windows\windows_forms_project_assignment.Properties.Resources.resources

@@ -14,6 +14,8 @@ namespace windows_forms_project_assignment
         private Label labelOrderListTitle;
         private DataGridView dataGridViewOrder;
         private Label labelItemDetailHint;
+        private Label labelTotalSalesTitle;
+        private Label labelTotalSales;
 
         /** variables for child forms */
         private Button buttonCreateProduct;
@@ -28,6 +30,14 @@ namespace windows_forms_project_assignment
 
             this.refreshProductList();
             this.initializeDataGridViewOrder();
+
+            /** set total sales */
+            int totalSales = 0;
+            foreach (Order order in DataManager.orders)
+            {
+                totalSales += order.grandTotal;
+            }
+            this.labelTotalSales.Text = totalSales.ToString();
         }
 
         private void InitializeComponent()
@@ -41,6 +51,8 @@ namespace windows_forms_project_assignment
             this.labelOrderListTitle = new System.Windows.Forms.Label();
             this.dataGridViewOrder = new System.Windows.Forms.DataGridView();
             this.labelItemDetailHint = new System.Windows.Forms.Label();
+            this.labelTotalSalesTitle = new System.Windows.Forms.Label();
+            this.labelTotalSales = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOrder)).BeginInit();
             this.SuspendLayout();
@@ -124,23 +136,45 @@ namespace windows_forms_project_assignment
             this.dataGridViewOrder.ReadOnly = true;
             this.dataGridViewOrder.RowTemplate.Height = 25;
             this.dataGridViewOrder.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewOrder.Size = new System.Drawing.Size(457, 436);
+            this.dataGridViewOrder.Size = new System.Drawing.Size(457, 395);
             this.dataGridViewOrder.TabIndex = 6;
             this.dataGridViewOrder.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewOrder_CellDoubleClick);
             // 
             // labelItemDetailHint
             // 
             this.labelItemDetailHint.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.labelItemDetailHint.Location = new System.Drawing.Point(417, 491);
+            this.labelItemDetailHint.Location = new System.Drawing.Point(417, 450);
             this.labelItemDetailHint.Name = "labelItemDetailHint";
             this.labelItemDetailHint.Size = new System.Drawing.Size(457, 20);
             this.labelItemDetailHint.TabIndex = 7;
             this.labelItemDetailHint.Text = "Double-click an item to view it\'s details.";
             this.labelItemDetailHint.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // labelTotalSalesTitle
+            // 
+            this.labelTotalSalesTitle.AutoSize = true;
+            this.labelTotalSalesTitle.Font = new System.Drawing.Font("Malgun Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelTotalSalesTitle.Location = new System.Drawing.Point(417, 481);
+            this.labelTotalSalesTitle.Name = "labelTotalSalesTitle";
+            this.labelTotalSalesTitle.Size = new System.Drawing.Size(119, 30);
+            this.labelTotalSalesTitle.TabIndex = 8;
+            this.labelTotalSalesTitle.Text = "Total Sales:";
+            // 
+            // labelTotalSales
+            // 
+            this.labelTotalSales.Font = new System.Drawing.Font("Malgun Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelTotalSales.Location = new System.Drawing.Point(537, 481);
+            this.labelTotalSales.Name = "labelTotalSales";
+            this.labelTotalSales.Size = new System.Drawing.Size(337, 30);
+            this.labelTotalSales.TabIndex = 9;
+            this.labelTotalSales.Text = "Lorem ipsum";
+            this.labelTotalSales.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
             // AdminForm
             // 
             this.ClientSize = new System.Drawing.Size(886, 520);
+            this.Controls.Add(this.labelTotalSales);
+            this.Controls.Add(this.labelTotalSalesTitle);
             this.Controls.Add(this.labelItemDetailHint);
             this.Controls.Add(this.dataGridViewOrder);
             this.Controls.Add(this.labelOrderListTitle);

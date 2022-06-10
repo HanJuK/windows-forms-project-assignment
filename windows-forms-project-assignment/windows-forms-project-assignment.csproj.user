@@ -20,8 +20,5 @@
     <Compile Update="OrderHistoryCart.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="OrderHistoryForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
 </Project>

@@ -27,6 +27,7 @@ namespace windows_forms_project_assignment
         private Label labelProductPrice;
         private NumericUpDown numericUpDownProductPrice;
         private Button buttonDeleteProduct;
+        private Label labelTitle;
         private Button buttonCreateUpdateProduct;
 
         /** CreateUpdateProductForm class constructor (create mode) */
@@ -40,9 +41,11 @@ namespace windows_forms_project_assignment
 
             this.InitializeComponent();
 
+            this.labelTitle.Text = "Create Product";
+
             this.buttonCreateUpdateProduct.Text = STRING_BUTTON_CREATE;
 
-            this.buttonDeleteProduct.Visible = false;
+            this.buttonDeleteProduct.Enabled = false;
         }
 
         /** CreateUpdateProductForm class constructor (update mode) */
@@ -61,6 +64,7 @@ namespace windows_forms_project_assignment
 
             this.InitializeComponent();
 
+            this.labelTitle.Text = "Update Product";
             this.textBoxProductName.Text = name;
             this.numericUpDownProductPrice.Value = price;
 
@@ -75,13 +79,14 @@ namespace windows_forms_project_assignment
             this.buttonCreateUpdateProduct = new System.Windows.Forms.Button();
             this.numericUpDownProductPrice = new System.Windows.Forms.NumericUpDown();
             this.buttonDeleteProduct = new System.Windows.Forms.Button();
+            this.labelTitle = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownProductPrice)).BeginInit();
             this.SuspendLayout();
             // 
             // labelProductName
             // 
             this.labelProductName.AutoSize = true;
-            this.labelProductName.Location = new System.Drawing.Point(12, 9);
+            this.labelProductName.Location = new System.Drawing.Point(27, 64);
             this.labelProductName.Name = "labelProductName";
             this.labelProductName.Size = new System.Drawing.Size(92, 15);
             this.labelProductName.TabIndex = 0;
@@ -89,15 +94,15 @@ namespace windows_forms_project_assignment
             // 
             // textBoxProductName
             // 
-            this.textBoxProductName.Location = new System.Drawing.Point(12, 27);
+            this.textBoxProductName.Location = new System.Drawing.Point(125, 61);
             this.textBoxProductName.Name = "textBoxProductName";
-            this.textBoxProductName.Size = new System.Drawing.Size(100, 23);
+            this.textBoxProductName.Size = new System.Drawing.Size(112, 23);
             this.textBoxProductName.TabIndex = 2;
             // 
             // labelProductPrice
             // 
             this.labelProductPrice.AutoSize = true;
-            this.labelProductPrice.Location = new System.Drawing.Point(233, 9);
+            this.labelProductPrice.Location = new System.Drawing.Point(27, 114);
             this.labelProductPrice.Name = "labelProductPrice";
             this.labelProductPrice.Size = new System.Drawing.Size(86, 15);
             this.labelProductPrice.TabIndex = 1;
@@ -105,11 +110,11 @@ namespace windows_forms_project_assignment
             // 
             // buttonCreateUpdateProduct
             // 
-            this.buttonCreateUpdateProduct.Location = new System.Drawing.Point(197, 56);
+            this.buttonCreateUpdateProduct.Location = new System.Drawing.Point(141, 157);
             this.buttonCreateUpdateProduct.Name = "buttonCreateUpdateProduct";
-            this.buttonCreateUpdateProduct.Size = new System.Drawing.Size(75, 23);
+            this.buttonCreateUpdateProduct.Size = new System.Drawing.Size(96, 33);
             this.buttonCreateUpdateProduct.TabIndex = 4;
-            this.buttonCreateUpdateProduct.Text = "Create/Update Product";
+            this.buttonCreateUpdateProduct.Text = "Lorem ipsum";
             this.buttonCreateUpdateProduct.UseVisualStyleBackColor = true;
             this.buttonCreateUpdateProduct.Click += new System.EventHandler(this.buttonCreateUpdateProduct_Click);
             // 
@@ -120,29 +125,43 @@ namespace windows_forms_project_assignment
             0,
             0,
             0});
-            this.numericUpDownProductPrice.Location = new System.Drawing.Point(122, 27);
+            this.numericUpDownProductPrice.Location = new System.Drawing.Point(125, 112);
             this.numericUpDownProductPrice.Maximum = new decimal(new int[] {
             100000,
             0,
             0,
             0});
             this.numericUpDownProductPrice.Name = "numericUpDownProductPrice";
-            this.numericUpDownProductPrice.Size = new System.Drawing.Size(150, 23);
+            this.numericUpDownProductPrice.Size = new System.Drawing.Size(112, 23);
             this.numericUpDownProductPrice.TabIndex = 5;
             // 
             // buttonDeleteProduct
             // 
-            this.buttonDeleteProduct.Location = new System.Drawing.Point(94, 98);
+            this.buttonDeleteProduct.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonDeleteProduct.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonDeleteProduct.ForeColor = System.Drawing.Color.Red;
+            this.buttonDeleteProduct.Location = new System.Drawing.Point(27, 157);
             this.buttonDeleteProduct.Name = "buttonDeleteProduct";
-            this.buttonDeleteProduct.Size = new System.Drawing.Size(94, 29);
+            this.buttonDeleteProduct.Size = new System.Drawing.Size(96, 34);
             this.buttonDeleteProduct.TabIndex = 6;
             this.buttonDeleteProduct.Text = "Delete";
-            this.buttonDeleteProduct.UseVisualStyleBackColor = true;
+            this.buttonDeleteProduct.UseVisualStyleBackColor = false;
             this.buttonDeleteProduct.Click += new System.EventHandler(this.buttonDeleteProduct_Click);
+            // 
+            // labelTitle
+            // 
+            this.labelTitle.Font = new System.Drawing.Font("Malgun Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelTitle.Location = new System.Drawing.Point(27, 9);
+            this.labelTitle.Name = "labelTitle";
+            this.labelTitle.Size = new System.Drawing.Size(210, 30);
+            this.labelTitle.TabIndex = 7;
+            this.labelTitle.Text = "Lorem ipsum";
+            this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CreateUpdateProductForm
             // 
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(266, 214);
+            this.Controls.Add(this.labelTitle);
             this.Controls.Add(this.buttonDeleteProduct);
             this.Controls.Add(this.numericUpDownProductPrice);
             this.Controls.Add(this.buttonCreateUpdateProduct);

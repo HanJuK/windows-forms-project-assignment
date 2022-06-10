@@ -33,7 +33,7 @@ namespace windows_forms_project_assignment
             // 
             // buttonAdminForm
             // 
-            this.buttonAdminForm.Location = new System.Drawing.Point(32, 155);
+            this.buttonAdminForm.Location = new System.Drawing.Point(32, 134);
             this.buttonAdminForm.Name = "buttonAdminForm";
             this.buttonAdminForm.Size = new System.Drawing.Size(90, 45);
             this.buttonAdminForm.TabIndex = 0;
@@ -42,7 +42,7 @@ namespace windows_forms_project_assignment
             // 
             // buttonOrderForm
             // 
-            this.buttonOrderForm.Location = new System.Drawing.Point(162, 155);
+            this.buttonOrderForm.Location = new System.Drawing.Point(162, 134);
             this.buttonOrderForm.Name = "buttonOrderForm";
             this.buttonOrderForm.Size = new System.Drawing.Size(90, 45);
             this.buttonOrderForm.TabIndex = 1;
@@ -52,7 +52,7 @@ namespace windows_forms_project_assignment
             // labelTitle
             // 
             this.labelTitle.Font = new System.Drawing.Font("Noto Sans KR Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelTitle.Location = new System.Drawing.Point(12, 53);
+            this.labelTitle.Location = new System.Drawing.Point(12, 49);
             this.labelTitle.Name = "labelTitle";
             this.labelTitle.Size = new System.Drawing.Size(260, 47);
             this.labelTitle.TabIndex = 2;
@@ -70,7 +70,7 @@ namespace windows_forms_project_assignment
             // 
             // MainForm
             // 
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(284, 213);
             this.Controls.Add(this.labelStudentInfo);
             this.Controls.Add(this.labelTitle);
             this.Controls.Add(this.buttonAdminForm);
