@@ -87,7 +87,7 @@ namespace windows_forms_project_assignment
             // labelDatetime
             // 
             this.labelDatetime.AutoSize = true;
-            this.labelDatetime.Location = new System.Drawing.Point(695, 146);
+            this.labelDatetime.Location = new System.Drawing.Point(695, 143);
             this.labelDatetime.Name = "labelDatetime";
             this.labelDatetime.Size = new System.Drawing.Size(59, 15);
             this.labelDatetime.TabIndex = 5;
@@ -96,7 +96,7 @@ namespace windows_forms_project_assignment
             // labelDatetimeValue
             // 
             this.labelDatetimeValue.AutoSize = true;
-            this.labelDatetimeValue.Location = new System.Drawing.Point(807, 146);
+            this.labelDatetimeValue.Location = new System.Drawing.Point(807, 143);
             this.labelDatetimeValue.Name = "labelDatetimeValue";
             this.labelDatetimeValue.Size = new System.Drawing.Size(39, 15);
             this.labelDatetimeValue.TabIndex = 6;
@@ -105,7 +105,7 @@ namespace windows_forms_project_assignment
             // labelPhoneValue
             // 
             this.labelPhoneValue.AutoSize = true;
-            this.labelPhoneValue.Location = new System.Drawing.Point(807, 203);
+            this.labelPhoneValue.Location = new System.Drawing.Point(807, 200);
             this.labelPhoneValue.Name = "labelPhoneValue";
             this.labelPhoneValue.Size = new System.Drawing.Size(39, 15);
             this.labelPhoneValue.TabIndex = 8;
@@ -114,7 +114,7 @@ namespace windows_forms_project_assignment
             // labelPhone
             // 
             this.labelPhone.AutoSize = true;
-            this.labelPhone.Location = new System.Drawing.Point(695, 203);
+            this.labelPhone.Location = new System.Drawing.Point(695, 200);
             this.labelPhone.Name = "labelPhone";
             this.labelPhone.Size = new System.Drawing.Size(44, 15);
             this.labelPhone.TabIndex = 7;
@@ -123,7 +123,7 @@ namespace windows_forms_project_assignment
             // labelGrandTotalValue
             // 
             this.labelGrandTotalValue.AutoSize = true;
-            this.labelGrandTotalValue.Location = new System.Drawing.Point(807, 261);
+            this.labelGrandTotalValue.Location = new System.Drawing.Point(807, 258);
             this.labelGrandTotalValue.Name = "labelGrandTotalValue";
             this.labelGrandTotalValue.Size = new System.Drawing.Size(39, 15);
             this.labelGrandTotalValue.TabIndex = 10;
@@ -132,7 +132,7 @@ namespace windows_forms_project_assignment
             // labelGrandTotal
             // 
             this.labelGrandTotal.AutoSize = true;
-            this.labelGrandTotal.Location = new System.Drawing.Point(695, 261);
+            this.labelGrandTotal.Location = new System.Drawing.Point(695, 258);
             this.labelGrandTotal.Name = "labelGrandTotal";
             this.labelGrandTotal.Size = new System.Drawing.Size(72, 15);
             this.labelGrandTotal.TabIndex = 9;
@@ -141,7 +141,7 @@ namespace windows_forms_project_assignment
             // labelMileageUsedValue
             // 
             this.labelMileageUsedValue.AutoSize = true;
-            this.labelMileageUsedValue.Location = new System.Drawing.Point(807, 317);
+            this.labelMileageUsedValue.Location = new System.Drawing.Point(807, 314);
             this.labelMileageUsedValue.Name = "labelMileageUsedValue";
             this.labelMileageUsedValue.Size = new System.Drawing.Size(39, 15);
             this.labelMileageUsedValue.TabIndex = 12;
@@ -150,7 +150,7 @@ namespace windows_forms_project_assignment
             // labelMileageUsed
             // 
             this.labelMileageUsed.AutoSize = true;
-            this.labelMileageUsed.Location = new System.Drawing.Point(695, 317);
+            this.labelMileageUsed.Location = new System.Drawing.Point(695, 314);
             this.labelMileageUsed.Name = "labelMileageUsed";
             this.labelMileageUsed.Size = new System.Drawing.Size(82, 15);
             this.labelMileageUsed.TabIndex = 11;

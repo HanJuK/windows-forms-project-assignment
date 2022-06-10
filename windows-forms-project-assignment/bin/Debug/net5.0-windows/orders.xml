@@ -27,4 +27,11 @@
   <phone>01089446650</phone>
   <isMileageUsed>0</isMileageUsed>
 </order>
+<order>
+  <cartDataInString>8,빅맥,5500,55,302500,|</cartDataInString>
+  <grandTotal>302500</grandTotal>
+  <datetime>2022/06/11 토 오전 2:09:27</datetime>
+  <phone>05181</phone>
+  <isMileageUsed>0</isMileageUsed>
+</order>
 </orders>
