@@ -9,6 +9,7 @@ namespace windows_forms_project_assignment
         /** define constants */
         const string STRING_FORM_TITLE = "Self Ordering System - Admin Screen";
         private DataGridView dataGridViewProduct;
+        private Button buttonOrderHistory;
 
         /** variables for child forms */
         private Button buttonCreateProduct;
@@ -28,6 +29,7 @@ namespace windows_forms_project_assignment
         {
             this.buttonCreateProduct = new System.Windows.Forms.Button();
             this.dataGridViewProduct = new System.Windows.Forms.DataGridView();
+            this.buttonOrderHistory = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProduct)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,9 +54,20 @@ namespace windows_forms_project_assignment
             this.dataGridViewProduct.TabIndex = 1;
             this.dataGridViewProduct.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewProduct_CellDoubleClick);
             // 
+            // buttonOrderHistory
+            // 
+            this.buttonOrderHistory.Location = new System.Drawing.Point(504, 211);
+            this.buttonOrderHistory.Name = "buttonOrderHistory";
+            this.buttonOrderHistory.Size = new System.Drawing.Size(103, 23);
+            this.buttonOrderHistory.TabIndex = 2;
+            this.buttonOrderHistory.Text = "Order History";
+            this.buttonOrderHistory.UseVisualStyleBackColor = true;
+            this.buttonOrderHistory.Click += new System.EventHandler(this.buttonOrderHistory_Click);
+            // 
             // AdminForm
             // 
-            this.ClientSize = new System.Drawing.Size(482, 453);
+            this.ClientSize = new System.Drawing.Size(648, 453);
+            this.Controls.Add(this.buttonOrderHistory);
             this.Controls.Add(this.dataGridViewProduct);
             this.Controls.Add(this.buttonCreateProduct);
             this.Name = "AdminForm";
@@ -119,6 +132,15 @@ namespace windows_forms_project_assignment
             }
 
             createUpdateProductForm.ShowDialog();
+
+            return;
+        }
+
+        /** define EventHandlers */
+        private void buttonOrderHistory_Click(object sender, EventArgs e)
+        {
+            /** open the Order History Screen */
+            (new OrderHistoryForm()).ShowDialog();
 
             return;
         }

@@ -16,6 +16,7 @@ namespace windows_forms_project_assignment
         private TextBox textBoxPhone;
         private Button buttonNoThanks;
 
+        /** MileageForm class constructor (initialize) */
         public MileageForm(List<CartItem> cart, int grandTotal)
         {
             /** set the title of the Form */

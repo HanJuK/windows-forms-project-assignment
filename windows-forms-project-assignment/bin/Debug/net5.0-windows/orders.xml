@@ -1,0 +1,23 @@
+<orders>
+<order>
+  <cartDataInString>8,빅맥,5000,4,20000,|</cartDataInString>
+  <grandTotal>20000</grandTotal>
+  <datetime>2022/06/10 금 오후 11:38:47</datetime>
+  <phone>01089446650</phone>
+  <isMileageUsed>0</isMileageUsed>
+</order>
+<order>
+  <cartDataInString>7,ㅁㄴㅁㅁㅇㅈㅂㅁ,5000,1,5000,|</cartDataInString>
+  <grandTotal>5000</grandTotal>
+  <datetime>2022/06/10 금 오후 11:45:33</datetime>
+  <phone>051</phone>
+  <isMileageUsed>0</isMileageUsed>
+</order>
+<order>
+  <cartDataInString>7,ㅁㄴㅁㅁㅇㅈㅂㅁ,5000,1,5000,|2,casdasdsadddddddddddddddddd,300,5,1500,|</cartDataInString>
+  <grandTotal>6500</grandTotal>
+  <datetime>2022/06/10 금 오후 11:59:04</datetime>
+  <phone>561651</phone>
+  <isMileageUsed>0</isMileageUsed>
+</order>
+</orders>

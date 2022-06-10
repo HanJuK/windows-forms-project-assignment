@@ -27,7 +27,7 @@ namespace windows_forms_project_assignment
         private Button buttonPay;
         private DataGridView dataGridViewCart;
 
-        /** AdminForm class constructor (initialize) */
+        /** OrderForm class constructor (initialize) */
         public OrderForm()
         {
             /** set the title of the Form */

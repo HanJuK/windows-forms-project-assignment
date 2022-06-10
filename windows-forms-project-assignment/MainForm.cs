@@ -60,11 +60,15 @@ namespace windows_forms_project_assignment
         {
             /** open the Admin Screen */
             (new AdminForm()).ShowDialog();
+
+            return;
         }
         private void buttonOrderForm_Click(object sender, EventArgs e)
         {
             /** open the Order Screen */
             (new OrderForm()).ShowDialog();
+
+            return;
         }
 
         /** the Main method (code starts executing here) */
