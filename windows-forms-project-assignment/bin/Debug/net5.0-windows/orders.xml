@@ -27,4 +27,39 @@
   <phone>-1</phone>
   <isMileageUsed>0</isMileageUsed>
 </order>
+<order>
+  <cartDataInString>10,ehtreh,0,1,0,|15,23523,0,8,0,|</cartDataInString>
+  <grandTotal>0</grandTotal>
+  <datetime>2022/06/11 토 오전 2:38:49</datetime>
+  <phone>01055555555</phone>
+  <isMileageUsed>0</isMileageUsed>
+</order>
+<order>
+  <cartDataInString>10,ehtreh,0,1,0,|</cartDataInString>
+  <grandTotal>0</grandTotal>
+  <datetime>2022/06/11 토 오전 2:53:45</datetime>
+  <phone>-1</phone>
+  <isMileageUsed>0</isMileageUsed>
+</order>
+<order>
+  <cartDataInString>9,bnmbhm,25235,1,25235,|5,234,100000,1,100000,|</cartDataInString>
+  <grandTotal>125235</grandTotal>
+  <datetime>2022/06/11 토 오전 2:54:00</datetime>
+  <phone>0105648</phone>
+  <isMileageUsed>0</isMileageUsed>
+</order>
+<order>
+  <cartDataInString>5,234,100000,1,100000,|</cartDataInString>
+  <grandTotal>100000</grandTotal>
+  <datetime>2022/06/11 토 오전 2:54:46</datetime>
+  <phone>01089446650</phone>
+  <isMileageUsed>0</isMileageUsed>
+</order>
+<order>
+  <cartDataInString>15,23523,0,1,0,|</cartDataInString>
+  <grandTotal>0</grandTotal>
+  <datetime>2022/06/11 토 오전 2:54:52</datetime>
+  <phone>01089446650</phone>
+  <isMileageUsed>0</isMileageUsed>
+</order>
 </orders>

@@ -178,6 +178,16 @@ namespace windows_forms_project_assignment
         /** define EventHandlers */
         private void buttonCreateUpdateProduct_Click(object sender, EventArgs e)
         {
+            /** handle exception where the name invalid */
+            if (textBoxProductName.Text.Equals("") || textBoxProductName.Text.Contains("|")
+                || textBoxProductName.Text.Contains(","))
+            {
+                MessageBox.Show("The product name can't be blank or contain the characters ['|' , ','].",
+                    "Product name invalid!");
+                
+                return;
+            }
+
             if (this.mode == INT_CREATE_MODE)
             {
                 DataManager.products.Add(new Product()

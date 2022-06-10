@@ -137,4 +137,10 @@
   <price>0</price>
   <isDeleted>0</isDeleted>
 </product>
+<product>
+  <id>23</id>
+  <name></name>
+  <price>0</price>
+  <isDeleted>0</isDeleted>
+</product>
 </products>

@@ -136,16 +136,14 @@ namespace windows_forms_project_assignment
             {
                 if (int.Parse(this.textBoxPhone.Text) < 0)
                 {
-                    // TODO: clean this
-                    MessageBox.Show("invalid");
+                    MessageBox.Show("Please enter a valid phone number.", "Phone number invalid!");
 
                     return;
                 }
             }
             catch (Exception _)
             {
-                // TODO: clean this
-                MessageBox.Show("invalid");
+                MessageBox.Show("Please enter a valid phone number.", "Phone number invalid!");
 
                 return;
             }
@@ -182,8 +180,10 @@ namespace windows_forms_project_assignment
 
                 DataManager.saveData();
 
-                // TODO: clean this
-                MessageBox.Show("10% dc applied");
+                MessageBox.Show("You've reached 10 orders! A 10% discount has been applied to your order.",
+                    "Purchase success!");
+
+                this.Close();
             }
             else
             {
@@ -198,8 +198,10 @@ namespace windows_forms_project_assignment
 
                 DataManager.saveData();
 
-                // TODO: clean this
-                MessageBox.Show($"current mileage: {mileageCount + 1}");
+                MessageBox.Show($"Thank you! Your current mileage point is {mileageCount + 1}.",
+                    "Purchase success!");
+
+                this.Close();
             }
 
             return;
@@ -218,8 +220,9 @@ namespace windows_forms_project_assignment
 
             DataManager.saveData();
 
-            // TODO: clean this
-            MessageBox.Show("purchase success");
+            MessageBox.Show($"Thank you! Please come again.", "Purchase success!");
+
+            this.Close();
 
             return;
         }
