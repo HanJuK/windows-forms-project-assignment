@@ -1,146 +1,98 @@
 <products>
 <product>
   <id>0</id>
-  <name>ajnhvjh</name>
-  <price>1000</price>
+  <name>Caffe Latte</name>
+  <price>3000</price>
   <isDeleted>0</isDeleted>
 </product>
 <product>
   <id>1</id>
-  <name>b</name>
-  <price>200</price>
-  <isDeleted>1</isDeleted>
+  <name>Caffe Mocha</name>
+  <price>3500</price>
+  <isDeleted>0</isDeleted>
 </product>
 <product>
   <id>2</id>
-  <name>casdasdsadddddddddddddddddd</name>
-  <price>300</price>
-  <isDeleted>1</isDeleted>
+  <name>White Chocolate Mocha</name>
+  <price>3750</price>
+  <isDeleted>0</isDeleted>
 </product>
 <product>
   <id>3</id>
-  <name>123</name>
-  <price>1511</price>
-  <isDeleted>1</isDeleted>
+  <name>Freshly Brewed Coffee</name>
+  <price>1850</price>
+  <isDeleted>0</isDeleted>
 </product>
 <product>
   <id>4</id>
-  <name>111</name>
-  <price>66</price>
-  <isDeleted>1</isDeleted>
+  <name>Cinnamon Dolce Latte</name>
+  <price>3650</price>
+  <isDeleted>0</isDeleted>
 </product>
 <product>
   <id>5</id>
-  <name>234</name>
-  <price>100000</price>
+  <name>Skinny Vanilla Latte</name>
+  <price>3450</price>
   <isDeleted>0</isDeleted>
 </product>
 <product>
   <id>6</id>
-  <name>awd</name>
-  <price>0</price>
-  <isDeleted>1</isDeleted>
+  <name>Caramel Macchiato</name>
+  <price>3750</price>
+  <isDeleted>0</isDeleted>
 </product>
 <product>
   <id>7</id>
-  <name>ㅁㄴㅁㅁㅇㅈㅂㅁ</name>
-  <price>5000</price>
-  <isDeleted>1</isDeleted>
+  <name>Caramel Flan Latte</name>
+  <price>3750</price>
+  <isDeleted>0</isDeleted>
 </product>
 <product>
   <id>8</id>
-  <name>빅맥</name>
-  <price>5500</price>
+  <name>Teavana® Oprah Cinnamon Chai Tea Latte</name>
+  <price>3650</price>
   <isDeleted>0</isDeleted>
 </product>
 <product>
   <id>9</id>
-  <name>bnmbhm</name>
-  <price>25235</price>
+  <name>Flat White</name>
+  <price>3750</price>
   <isDeleted>0</isDeleted>
 </product>
 <product>
   <id>10</id>
-  <name>ehtreh</name>
-  <price>0</price>
+  <name>Skinny Peppermint Mocha</name>
+  <price>3950</price>
   <isDeleted>0</isDeleted>
 </product>
 <product>
   <id>11</id>
-  <name>regreg</name>
-  <price>180</price>
-  <isDeleted>1</isDeleted>
+  <name>Pumpkin Spice Latte</name>
+  <price>4250</price>
+  <isDeleted>0</isDeleted>
 </product>
 <product>
   <id>12</id>
-  <name>1231</name>
-  <price>0</price>
+  <name>Salted Caramel Mocha</name>
+  <price>4250</price>
   <isDeleted>0</isDeleted>
 </product>
 <product>
   <id>13</id>
-  <name>123123</name>
-  <price>234</price>
+  <name>Toasted Graham Latte</name>
+  <price>4250</price>
   <isDeleted>0</isDeleted>
 </product>
 <product>
   <id>14</id>
-  <name>13515</name>
-  <price>0</price>
+  <name>Iced Coffee</name>
+  <price>2250</price>
   <isDeleted>0</isDeleted>
 </product>
 <product>
   <id>15</id>
-  <name>23523</name>
-  <price>0</price>
-  <isDeleted>0</isDeleted>
-</product>
-<product>
-  <id>16</id>
-  <name>235235</name>
-  <price>0</price>
-  <isDeleted>0</isDeleted>
-</product>
-<product>
-  <id>17</id>
-  <name>69679</name>
-  <price>0</price>
-  <isDeleted>0</isDeleted>
-</product>
-<product>
-  <id>18</id>
-  <name>7808087</name>
-  <price>0</price>
-  <isDeleted>0</isDeleted>
-</product>
-<product>
-  <id>19</id>
-  <name>47457</name>
-  <price>0</price>
-  <isDeleted>0</isDeleted>
-</product>
-<product>
-  <id>20</id>
-  <name>90768078</name>
-  <price>0</price>
-  <isDeleted>0</isDeleted>
-</product>
-<product>
-  <id>21</id>
-  <name>365364</name>
-  <price>0</price>
-  <isDeleted>0</isDeleted>
-</product>
-<product>
-  <id>22</id>
-  <name>7969769</name>
-  <price>0</price>
-  <isDeleted>0</isDeleted>
-</product>
-<product>
-  <id>23</id>
-  <name></name>
-  <price>0</price>
+  <name>Caramel Frappuccino</name>
+  <price>3800</price>
   <isDeleted>0</isDeleted>
 </product>
 </products>

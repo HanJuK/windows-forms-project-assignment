@@ -1,65 +1,128 @@
 <orders>
 <order>
-  <cartDataInString>12,1231,0,1,0,|14,13515,0,1,0,|9,bnmbhm,25235,1,25235,|</cartDataInString>
-  <grandTotal>25235</grandTotal>
-  <datetime>2022/06/11 토 오전 2:26:55</datetime>
-  <phone>-1</phone>
+  <cartDataInString>2,White Chocolate Mocha,3750,2,7500,|</cartDataInString>
+  <grandTotal>7500</grandTotal>
+  <datetime>2022/06/11 토 오전 3:05:42</datetime>
+  <phone>01011111111</phone>
   <isMileageUsed>0</isMileageUsed>
 </order>
 <order>
-  <cartDataInString>13,123123,234,1,234,|15,23523,0,1,0,|</cartDataInString>
-  <grandTotal>234</grandTotal>
-  <datetime>2022/06/11 토 오전 2:27:11</datetime>
-  <phone>25</phone>
-  <isMileageUsed>0</isMileageUsed>
-</order>
-<order>
-  <cartDataInString>9,bnmbhm,25235,1,25235,|15,23523,0,1,0,|13,123123,234,100,23400,|</cartDataInString>
-  <grandTotal>48635</grandTotal>
-  <datetime>2022/06/11 토 오전 2:36:23</datetime>
-  <phone>-1</phone>
-  <isMileageUsed>0</isMileageUsed>
-</order>
-<order>
-  <cartDataInString>8,빅맥,5500,1,5500,|</cartDataInString>
-  <grandTotal>5500</grandTotal>
-  <datetime>2022/06/11 토 오전 2:37:15</datetime>
-  <phone>-1</phone>
-  <isMileageUsed>0</isMileageUsed>
-</order>
-<order>
-  <cartDataInString>10,ehtreh,0,1,0,|15,23523,0,8,0,|</cartDataInString>
-  <grandTotal>0</grandTotal>
-  <datetime>2022/06/11 토 오전 2:38:49</datetime>
+  <cartDataInString>0,Caffe Latte,3000,1,3000,|</cartDataInString>
+  <grandTotal>3000</grandTotal>
+  <datetime>2022/06/11 토 오전 3:06:01</datetime>
   <phone>01055555555</phone>
   <isMileageUsed>0</isMileageUsed>
 </order>
 <order>
-  <cartDataInString>10,ehtreh,0,1,0,|</cartDataInString>
-  <grandTotal>0</grandTotal>
-  <datetime>2022/06/11 토 오전 2:53:45</datetime>
+  <cartDataInString>7,Caramel Flan Latte,3750,2,7500,|8,Teavana® Oprah Cinnamon Chai Tea Latte,3650,1,3650,|</cartDataInString>
+  <grandTotal>11150</grandTotal>
+  <datetime>2022/06/11 토 오전 3:06:19</datetime>
+  <phone>01022222222</phone>
+  <isMileageUsed>0</isMileageUsed>
+</order>
+<order>
+  <cartDataInString>6,Caramel Macchiato,3750,1,3750,|</cartDataInString>
+  <grandTotal>3750</grandTotal>
+  <datetime>2022/06/11 토 오전 3:06:27</datetime>
   <phone>-1</phone>
   <isMileageUsed>0</isMileageUsed>
 </order>
 <order>
-  <cartDataInString>9,bnmbhm,25235,1,25235,|5,234,100000,1,100000,|</cartDataInString>
-  <grandTotal>125235</grandTotal>
-  <datetime>2022/06/11 토 오전 2:54:00</datetime>
-  <phone>0105648</phone>
+  <cartDataInString>0,Caffe Latte,3000,1,3000,|</cartDataInString>
+  <grandTotal>3000</grandTotal>
+  <datetime>2022/06/11 토 오전 3:06:42</datetime>
+  <phone>01011111111</phone>
   <isMileageUsed>0</isMileageUsed>
 </order>
 <order>
-  <cartDataInString>5,234,100000,1,100000,|</cartDataInString>
-  <grandTotal>100000</grandTotal>
-  <datetime>2022/06/11 토 오전 2:54:46</datetime>
-  <phone>01089446650</phone>
+  <cartDataInString>8,Teavana® Oprah Cinnamon Chai Tea Latte,3650,1,3650,|</cartDataInString>
+  <grandTotal>3650</grandTotal>
+  <datetime>2022/06/11 토 오전 3:06:56</datetime>
+  <phone>01011111111</phone>
   <isMileageUsed>0</isMileageUsed>
 </order>
 <order>
-  <cartDataInString>15,23523,0,1,0,|</cartDataInString>
-  <grandTotal>0</grandTotal>
-  <datetime>2022/06/11 토 오전 2:54:52</datetime>
-  <phone>01089446650</phone>
+  <cartDataInString>8,Teavana® Oprah Cinnamon Chai Tea Latte,3650,1,3650,|6,Caramel Macchiato,3750,1,3750,|4,Cinnamon Dolce Latte,3650,1,3650,|</cartDataInString>
+  <grandTotal>11050</grandTotal>
+  <datetime>2022/06/11 토 오전 3:07:07</datetime>
+  <phone>01011111111</phone>
+  <isMileageUsed>0</isMileageUsed>
+</order>
+<order>
+  <cartDataInString>1,Caffe Mocha,3500,5,17500,|</cartDataInString>
+  <grandTotal>17500</grandTotal>
+  <datetime>2022/06/11 토 오전 3:07:19</datetime>
+  <phone>01011111111</phone>
+  <isMileageUsed>0</isMileageUsed>
+</order>
+<order>
+  <cartDataInString>15,Caramel Frappuccino,3750,1,3750,|</cartDataInString>
+  <grandTotal>3750</grandTotal>
+  <datetime>2022/06/11 토 오전 3:07:30</datetime>
+  <phone>01011111111</phone>
+  <isMileageUsed>0</isMileageUsed>
+</order>
+<order>
+  <cartDataInString>7,Caramel Flan Latte,3750,1,3750,|</cartDataInString>
+  <grandTotal>3750</grandTotal>
+  <datetime>2022/06/11 토 오전 3:10:43</datetime>
+  <phone>-1</phone>
+  <isMileageUsed>0</isMileageUsed>
+</order>
+<order>
+  <cartDataInString>7,Caramel Flan Latte,3750,2,7500,|</cartDataInString>
+  <grandTotal>7500</grandTotal>
+  <datetime>2022/06/11 토 오전 11:40:45</datetime>
+  <phone>01011111111</phone>
+  <isMileageUsed>0</isMileageUsed>
+</order>
+<order>
+  <cartDataInString>8,Teavana® Oprah Cinnamon Chai Tea Latte,3650,1,3650,|7,Caramel Flan Latte,3750,1,3750,|6,Caramel Macchiato,3750,1,3750,|5,Skinny Vanilla Latte,3450,1,3450,|</cartDataInString>
+  <grandTotal>14600</grandTotal>
+  <datetime>2022/06/11 토 오전 11:40:55</datetime>
+  <phone>01011111111</phone>
+  <isMileageUsed>0</isMileageUsed>
+</order>
+<order>
+  <cartDataInString>6,Caramel Macchiato,3750,1,3750,|</cartDataInString>
+  <grandTotal>3750</grandTotal>
+  <datetime>2022/06/11 토 오후 12:26:02</datetime>
+  <phone>-1</phone>
+  <isMileageUsed>0</isMileageUsed>
+</order>
+<order>
+  <cartDataInString>2,White Chocolate Mocha,3750,1,3750,|5,Skinny Vanilla Latte,3450,1,3450,|7,Caramel Flan Latte,3750,5,18750,|</cartDataInString>
+  <grandTotal>25950</grandTotal>
+  <datetime>2022/06/11 토 오후 2:15:11</datetime>
+  <phone>01011111111</phone>
+  <isMileageUsed>0</isMileageUsed>
+</order>
+<order>
+  <cartDataInString>6,Caramel Macchiato,3750,1,3750,|</cartDataInString>
+  <grandTotal>3375</grandTotal>
+  <datetime>2022/06/11 토 오후 2:15:36</datetime>
+  <phone>01011111111</phone>
+  <isMileageUsed>1</isMileageUsed>
+</order>
+<order>
+  <cartDataInString>7,Caramel Flan Latte,3750,1,3750,|</cartDataInString>
+  <grandTotal>3750</grandTotal>
+  <datetime>2022/06/11 토 오후 2:15:49</datetime>
+  <phone>-1</phone>
+  <isMileageUsed>0</isMileageUsed>
+</order>
+<order>
+  <cartDataInString>3,Freshly Brewed Coffee,1850,1,1850,|6,Caramel Macchiato,3750,3,11250,|</cartDataInString>
+  <grandTotal>13100</grandTotal>
+  <datetime>2022/06/11 토 오후 2:45:05</datetime>
+  <phone>01022222222</phone>
+  <isMileageUsed>0</isMileageUsed>
+</order>
+<order>
+  <cartDataInString>4,Cinnamon Dolce Latte,3650,1,3650,|7,Caramel Flan Latte,3750,1,3750,|</cartDataInString>
+  <grandTotal>7400</grandTotal>
+  <datetime>2022/06/11 토 오후 2:45:31</datetime>
+  <phone>-1</phone>
   <isMileageUsed>0</isMileageUsed>
 </order>
 </orders>
