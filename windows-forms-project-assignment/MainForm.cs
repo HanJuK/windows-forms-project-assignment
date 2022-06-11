@@ -100,9 +100,7 @@ namespace windows_forms_project_assignment
         /** the Main method (code starts executing here) */
         static void Main(string[] args)
         {
-            MainForm mainForm = new MainForm();
-
-            Application.Run(mainForm);
+            Application.Run(new MainForm());
         }
     }
 }
